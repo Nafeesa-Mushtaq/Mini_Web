@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Pocket calculator</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <p class="muted">EVERYDAY MATH</p>
+                <h1>Pocket Calculator</h1>
+            </header>
+
+            <output aria-live="polite" id="display">0</output>
+            <div class="keys">
+                <button class="secondary" data-key="clear">AC</button>
+                <button aria-label="Delete last digit" class="secondary" data-key="delete">
+                    DEL
+                </button>
+                <button aria-label="Change sign" class="secondary" data-key="sign">+/−</button>
+                <button aria-label="Divide" data-key="/">÷</button>
+                <button data-key="7">7</button>
+                <button data-key="8">8</button>
+                <button data-key="9">9</button>
+                <button aria-label="Multiply" data-key="*">×</button>
+                <button data-key="4">4</button>
+                <button data-key="5">5</button>
+                <button data-key="6">6</button>
+                <button aria-label="Subtract" data-key="-">−</button>
+                <button data-key="1">1</button>
+                <button data-key="2">2</button>
+                <button data-key="3">3</button>
+                <button aria-label="Add" data-key="+">+</button>
+                <button class="zero" data-key="0">0</button>
+                <button data-key=".">.</button>
+                <button aria-label="Equals" data-key="=">=</button>
+            </div>
+            <p class="muted">You can also use your keyboard.</p>
+        </main>
+    </body>
+</html>
