@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Today’s list</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <p class="muted">ONE THING AT A TIME</p>
+                <h1>Today’s List</h1>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="task-form">
+                        <label for="task">New task</label>
+                        <div class="row">
+                            <input
+                                id="task"
+                                maxlength="120"
+                                placeholder="Read a chapter"
+                                required=""
+                            />
+                            <button>Add</button>
+                        </div>
+                    </form>
+                    <p class="muted" id="storage">Saved in this browser.</p>
+                </div>
+                <div class="result-panel">
+                    <ul id="tasks"></ul>
+                    <p class="status" id="summary" role="status"></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
