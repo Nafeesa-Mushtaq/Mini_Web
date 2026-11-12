@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Word counter</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Word Counter</h1></header>
+            <div class="split">
+                <div class="controls-panel">
+                    <label for="text">Your text</label>
+                    <textarea id="text" placeholder="Start typing here…" rows="7"></textarea>
+                </div>
+                <div class="stats-panel">
+                    <div aria-live="polite" class="stats">
+                        <div>
+                            <strong id="words">0</strong>
+                            <span>Words</span>
+                        </div>
+                        <div>
+                            <strong id="characters">0</strong>
+                            <span>Characters</span>
+                        </div>
+                        <div>
+                            <strong id="lines">0</strong>
+                            <span>Non-empty lines</span>
+                        </div>
+                    </div>
+                    <button class="secondary" id="clear">Clear text</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
