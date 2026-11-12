@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Monthly calendar</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <p class="muted">A MONTH AT A GLANCE</p>
+                <h1>Calendar</h1>
+            </header>
+
+            <div class="month-nav">
+                <button aria-label="Previous month" id="previous">←</button>
+                <h2 aria-live="polite" id="month"></h2>
+                <button aria-label="Next month" id="next">→</button>
+            </div>
+            <div aria-hidden="true" class="weekdays">
+                <span>Su</span>
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+            </div>
+            <div aria-label="Days in this month" id="days"></div>
+            <div class="row"><button class="secondary" id="today">Back to today</button></div>
+        </main>
+    </body>
+</html>
