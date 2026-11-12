@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Lap stopwatch</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Lap Stopwatch</h1>
+                <p class="muted">One task. One lap at a time.</p>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <div class="big" id="time" role="timer">00:00.00</div>
+                    <div class="row">
+                        <button id="start">Start</button>
+                        <button class="secondary" disabled="" id="lap">Lap</button>
+                        <button class="secondary" id="reset">Reset</button>
+                    </div>
+                </div>
+                <div class="result-panel">
+                    <h2>Laps</h2>
+                    <p class="empty-laps muted">No laps recorded yet.</p>
+                    <ol aria-label="Recorded laps" id="laps"></ol>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
