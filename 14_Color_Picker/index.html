@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Color notebook</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Color Notebook</h1></header>
+            <div class="split">
+                <div class="preview-panel">
+                    <div aria-label="Selected color preview" id="swatch"></div>
+                </div>
+                <div class="controls-panel">
+                    <label for="picker">Pick a color</label>
+                    <input id="picker" type="color" value="#c16d46" />
+                    <dl>
+                        <div>
+                            <dt>HEX</dt>
+                            <dd id="hex">#C16D46</dd>
+                        </div>
+                        <div>
+                            <dt>RGB</dt>
+                            <dd id="rgb">rgb(193, 109, 70)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
