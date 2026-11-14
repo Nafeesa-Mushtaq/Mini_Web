@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Text case converter</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Text Case Converter</h1></header>
+
+            <label for="text">Text to change</label>
+            <textarea id="text" placeholder="A few words go here"></textarea>
+            <div class="row">
+                <button data-case="upper">UPPERCASE</button>
+                <button data-case="lower">lowercase</button>
+                <button data-case="title">Title Case</button>
+                <button class="secondary" id="clear">Clear</button>
+            </div>
+            <p class="status" id="status" role="status">Choose a style after entering some text.</p>
+        </main>
+    </body>
+</html>
