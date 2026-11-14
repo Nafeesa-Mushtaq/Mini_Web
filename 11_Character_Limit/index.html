@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Short message</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Keep It Short</h1></header>
+
+            <label for="message">Your message</label>
+            <textarea
+                aria-describedby="remaining"
+                id="message"
+                placeholder="What’s on your mind?"
+            ></textarea>
+            <progress aria-label="Characters used" id="progress" max="160" value="0"></progress>
+            <p id="remaining" role="status">160 characters left</p>
+            <button class="secondary" id="clear">Start over</button>
+        </main>
+    </body>
+</html>
