@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Guess my number</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Guess My Number</h1>
+                <p>I picked a number from 1 to 100. You have 10 tries.</p>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="guess-form">
+                        <label for="guess">Your guess</label>
+                        <div class="row">
+                            <input id="guess" max="100" min="1" required="" type="number" />
+                        </div>
+                    </form>
+                    <button id="check">Check</button>
+                    <button class="secondary" id="new">New game</button>
+                </div>
+                <div class="result-panel">
+                    <p class="result" id="message" role="status">Make your first guess.</p>
+                    <p class="muted" id="history">No guesses yet.</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
