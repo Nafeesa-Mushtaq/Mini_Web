@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Heads or tails</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Heads or Tails?</h1></header>
+            <div class="split">
+                <div class="coin-panel"><div aria-hidden="true" id="coin">H</div></div>
+                <div class="controls-panel">
+                    <p id="result" role="status">Give it a flip.</p>
+                    <div class="row">
+                        <button id="flip">Flip coin</button>
+                        <button class="secondary" id="reset">Reset</button>
+                    </div>
+                    <p class="scores">
+                        Heads
+                        <strong id="heads">0</strong>
+                        <span>·</span>
+                        Tails
+                        <strong id="tails">0</strong>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
