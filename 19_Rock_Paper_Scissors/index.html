@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Rock, paper, scissors</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Rock, Paper, Scissors</h1>
+                <p>Pick your move.</p>
+            </header>
+            <div class="play-area">
+                <div class="moves">
+                    <button aria-pressed="false" data-move="Rock">
+                        ✊
+                        <span>Rock</span>
+                    </button>
+                    <button aria-pressed="false" data-move="Paper">
+                        ✋
+                        <span>Paper</span>
+                    </button>
+                    <button aria-pressed="false" data-move="Scissors">
+                        ✌
+                        <span>Scissors</span>
+                    </button>
+                </div>
+                <div aria-label="Selected moves" class="matchup">
+                    <div class="choice" id="player-choice">
+                        <h2>You</h2>
+                        <span aria-hidden="true" class="choice-icon" id="player-icon">?</span>
+                        <strong class="choice-name" id="player-move">Your move</strong>
+                    </div>
+                    <span class="versus">VS</span>
+                    <div class="choice" id="computer-choice">
+                        <h2>Computer</h2>
+                        <span aria-hidden="true" class="choice-icon" id="computer-icon">?</span>
+                        <strong class="choice-name" id="computer-move">Waiting</strong>
+                    </div>
+                </div>
+            </div>
+
+            <p class="result" id="round" role="status">Ready when you are.</p>
+
+            <div class="game-footer">
+                <p id="score">You 0 · Computer 0 · Draws 0</p>
+                <button class="secondary" id="reset">Reset scores</button>
+            </div>
+        </main>
+    </body>
+</html>
