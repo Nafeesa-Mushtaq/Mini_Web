@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Gradient maker</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Gradient Maker</h1></header>
+            <div class="split">
+                <div class="preview-panel">
+                    <div aria-label="Gradient preview" id="preview"></div>
+                </div>
+                <div class="controls-panel">
+                    <div class="colors">
+                        <div>
+                            <label for="first">First color</label>
+                            <input id="first" type="color" value="#4669a1" />
+                        </div>
+                        <div>
+                            <label for="second">Second color</label>
+                            <input id="second" type="color" value="#cba4d5" />
+                        </div>
+                    </div>
+                    <label for="angle">
+                        Angle:
+                        <span id="degrees">90</span>
+                        °
+                    </label>
+                    <input id="angle" max="360" min="0" type="range" value="90" />
+                    <label for="code">CSS background</label>
+                    <textarea id="code" readonly="" rows="2" spellcheck="false"></textarea>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
