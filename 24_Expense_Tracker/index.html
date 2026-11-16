@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Pocket expenses</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Pocket Expenses</h1>
+                <p class="muted">A simple list of what you spent.</p>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="form">
+                        <label for="name">Expense</label>
+                        <input id="name" maxlength="70" placeholder="Lunch" required="" />
+                        <label for="amount">Amount</label>
+                        <input
+                            id="amount"
+                            max="1000000000"
+                            min="0.01"
+                            placeholder="0.00"
+                            required=""
+                            step="0.01"
+                            type="number"
+                        />
+                        <div class="row"><button>Add expense</button></div>
+                    </form>
+                    <p class="muted" id="status">
+                        Saved locally. Use one currency for the whole list.
+                    </p>
+                </div>
+                <div class="result-panel">
+                    <ul id="expenses"></ul>
+                    <p class="total">
+                        Total
+                        <output aria-live="polite" id="total">0.00</output>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
