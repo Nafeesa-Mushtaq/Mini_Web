@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Sale price</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <p class="tag">% OFF</p>
+                <h1>Sale Price</h1>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="form">
+                        <label for="price">Original price</label>
+                        <input
+                            id="price"
+                            max="1000000000"
+                            min="0"
+                            placeholder="100.00"
+                            required=""
+                            step="0.01"
+                            type="number"
+                        />
+                        <label for="discount">Discount (%)</label>
+                        <input
+                            id="discount"
+                            max="100"
+                            min="0"
+                            required=""
+                            step="0.1"
+                            type="number"
+                            value="20"
+                        />
+                        <div class="row"><button>Find sale price</button></div>
+                    </form>
+                </div>
+                <div class="result-panel">
+                    <h2>Result</h2>
+                    <output aria-live="polite" class="result" id="result">
+                        Your savings will appear here.
+                    </output>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
