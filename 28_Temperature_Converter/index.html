@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Temperature converter</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Temperature Converter</h1></header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="form">
+                        <label for="value">Temperature</label>
+                        <input
+                            id="value"
+                            max="1000000"
+                            min="-1000000"
+                            required=""
+                            step="any"
+                            type="number"
+                            value="25"
+                        />
+                        <label for="unit">Unit</label>
+                        <select id="unit">
+                            <option value="c">Celsius (°C)</option>
+                            <option value="f">Fahrenheit (°F)</option>
+                            <option value="k">Kelvin (K)</option>
+                        </select>
+                        <div class="row"><button>Convert</button></div>
+                    </form>
+                </div>
+                <div class="result-panel">
+                    <h2>Result</h2>
+                    <output aria-live="polite" class="result" id="result"></output>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
