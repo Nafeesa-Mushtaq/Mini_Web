@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Percentage finder</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Percentage Finder</h1>
+                <p>What is a percentage of a number?</p>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="form">
+                        <label for="percent">Percentage (%)</label>
+                        <input
+                            id="percent"
+                            max="1000000000"
+                            min="-1000000000"
+                            required=""
+                            step="any"
+                            type="number"
+                            value="15"
+                        />
+                        <label for="number">Number</label>
+                        <input
+                            id="number"
+                            max="1000000000"
+                            min="-1000000000"
+                            required=""
+                            step="any"
+                            type="number"
+                            value="200"
+                        />
+                        <div class="row"><button>Calculate</button></div>
+                    </form>
+                </div>
+                <div class="result-panel">
+                    <h2>Result</h2>
+                    <output aria-live="polite" class="result" id="result">15% of 200 = 30</output>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
