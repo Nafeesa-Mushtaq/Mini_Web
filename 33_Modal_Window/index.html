@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Take a short break</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <div aria-hidden="true" class="cup">☕</div>
+                <h1>Time For A Breather?</h1>
+                <p>Step away for a moment and come back with fresh eyes.</p>
+            </header>
+
+            <button id="open">Plan a short break</button>
+            <dialog aria-labelledby="dialog-title" id="dialog">
+                <form method="dialog">
+                    <button aria-label="Close dialog" class="close secondary">×</button>
+                </form>
+                <p class="muted">A FIVE-MINUTE RESET</p>
+                <h2 id="dialog-title">Leave the desk for a bit.</h2>
+                <ul>
+                    <li>Stand up and stretch.</li>
+                    <li>Drink a glass of water.</li>
+                    <li>Look at something far away.</li>
+                </ul>
+                <form method="dialog"><button>Sounds good</button></form>
+            </dialog>
+        </main>
+    </body>
+</html>
