@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Little notifications</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Little Notifications</h1>
+                <p>Choose a message to show. Each one closes after five seconds.</p>
+            </header>
+
+            <div class="row">
+                <button data-type="success">Success</button>
+                <button data-type="error">Error</button>
+                <button data-type="info">Information</button>
+            </div>
+            <div aria-live="polite" aria-relevant="additions" id="toasts"></div>
+        </main>
+    </body>
+</html>
