@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Times table</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Times Table</h1></header>
+            <div class="split">
+                <div class="controls-panel">
+                    <form id="form">
+                        <label for="number">Choose a whole number</label>
+                        <div class="row">
+                            <input
+                                id="number"
+                                max="1000"
+                                min="-1000"
+                                required=""
+                                type="number"
+                                value="7"
+                            />
+                            <button>Show table</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="table-panel">
+                    <ol aria-label="Multiplication results" id="table"></ol>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
