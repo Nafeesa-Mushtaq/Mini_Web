@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Learning notes</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading"><h1>Learning Notes</h1></header>
+
+            <div aria-label="Web languages" role="tablist">
+                <button aria-controls="html-panel" aria-selected="true" id="html-tab" role="tab">
+                    HTML
+                </button>
+                <button
+                    aria-controls="css-panel"
+                    aria-selected="false"
+                    id="css-tab"
+                    role="tab"
+                    tabindex="-1"
+                >
+                    CSS
+                </button>
+                <button
+                    aria-controls="js-panel"
+                    aria-selected="false"
+                    id="js-tab"
+                    role="tab"
+                    tabindex="-1"
+                >
+                    JavaScript
+                </button>
+            </div>
+            <section aria-labelledby="html-tab" id="html-panel" role="tabpanel" tabindex="0">
+                <p class="number">01 / STRUCTURE</p>
+                <h2>Give the page a shape.</h2>
+                <p>
+                    HTML describes the content of a page. Headings, paragraphs, lists, and links all
+                    have their own elements.
+                </p>
+                <code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code>
+            </section>
+            <section
+                aria-labelledby="css-tab"
+                hidden=""
+                id="css-panel"
+                role="tabpanel"
+                tabindex="0"
+            >
+                <p class="number">02 / STYLE</p>
+                <h2>Make it your own.</h2>
+                <p>
+                    CSS controls color, spacing, type, and layout. A few clear rules can make a page
+                    much easier to read.
+                </p>
+                <code>h1 { color: teal; }</code>
+            </section>
+            <section aria-labelledby="js-tab" hidden="" id="js-panel" role="tabpanel" tabindex="0">
+                <p class="number">03 / INTERACTION</p>
+                <h2>Let the page respond.</h2>
+                <p>
+                    JavaScript handles actions and updates content. Start with a button, a click
+                    event, and one small change.
+                </p>
+                <code>button.addEventListener('click', greet);</code>
+            </section>
+        </main>
+    </body>
+</html>
