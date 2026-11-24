@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Notebook navigation</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <strong>NOTEBOOK</strong>
+                <button aria-haspopup="dialog" aria-label="Open navigation" id="open">
+                    ☰ Menu
+                </button>
+            </header>
+            <section id="content" tabindex="-1">
+                <p class="muted" id="label">01 / HOME</p>
+                <h1 id="title">A place for small ideas.</h1>
+                <p id="text">
+                    Keep a list, make a sketch, or write down something you learned today.
+                </p>
+            </section>
+            <dialog aria-labelledby="menu-title" id="menu">
+                <div class="menu-heading">
+                    <h2 id="menu-title">Notebook</h2>
+                    <button aria-label="Close navigation" id="close">×</button>
+                </div>
+                <nav aria-label="Main navigation">
+                    <button aria-current="page" data-page="home">Home</button>
+                    <button data-page="notes">Notes</button>
+                    <button data-page="about">About</button>
+                </nav>
+                <p class="muted">A small corner of the web.</p>
+            </dialog>
+        </main>
+    </body>
+</html>
