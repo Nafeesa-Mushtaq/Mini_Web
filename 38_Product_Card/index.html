@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Everyday mug</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="product-art">
+                <div aria-label="Clay colored mug" id="mug" role="img">
+                    <div class="handle"></div>
+                </div>
+            </div>
+            <div class="details">
+                <p class="muted">THE DAILY CUP</p>
+                <h1>Everyday Mug</h1>
+                <p>A simple ceramic mug for slow mornings. Holds 350 ml.</p>
+                <p class="price">$18.00</p>
+                <fieldset>
+                    <legend>
+                        Color:
+                        <span id="color-name">Clay</span>
+                    </legend>
+                    <label>
+                        <input
+                            checked=""
+                            data-color="#bd795e"
+                            name="color"
+                            type="radio"
+                            value="Clay"
+                        />
+                        Clay
+                    </label>
+                    <label>
+                        <input data-color="#819b80" name="color" type="radio" value="Sage" />
+                        Sage
+                    </label>
+                    <label>
+                        <input data-color="#7294ad" name="color" type="radio" value="Blue" />
+                        Blue
+                    </label>
+                </fieldset>
+                <div class="row">
+                    <button id="add">Add to bag</button>
+                    <button class="secondary" id="empty">Empty bag</button>
+                </div>
+                <p class="status" id="bag" role="status">Your sample bag is empty.</p>
+            </div>
+        </main>
+    </body>
+</html>
