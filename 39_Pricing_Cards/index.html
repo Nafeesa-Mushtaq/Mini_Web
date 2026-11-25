@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Study space plans</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <p class="muted">STUDY SPACE</p>
+                <h1>A Little Room To Focus.</h1>
+                <p>Choose a sample plan to see its details.</p>
+                <label class="billing">
+                    <input id="yearly" type="checkbox" />
+                    Yearly billing · save 20%
+                </label>
+            </header>
+            <div class="plans">
+                <article>
+                    <h2>Starter</h2>
+                    <p class="price">
+                        <span id="starter-price">$5</span>
+                        <small>/ month</small>
+                    </p>
+                    <p id="starter-billing">Billed monthly</p>
+                    <ul>
+                        <li>One personal workspace</li>
+                        <li>Weekly planner</li>
+                        <li>Basic notes</li>
+                    </ul>
+                    <button data-monthly="5" data-plan="Starter">Choose Starter</button>
+                </article>
+                <article class="featured">
+                    <p class="badge">MORE ROOM</p>
+                    <h2>Plus</h2>
+                    <p class="price">
+                        <span id="plus-price">$10</span>
+                        <small>/ month</small>
+                    </p>
+                    <p id="plus-billing">Billed monthly</p>
+                    <ul>
+                        <li>Five workspaces</li>
+                        <li>Weekly and monthly planners</li>
+                        <li>Notes and checklists</li>
+                    </ul>
+                    <button data-monthly="10" data-plan="Plus">Choose Plus</button>
+                </article>
+            </div>
+            <p class="status" id="selection" role="status">
+                These are practice plans; no purchase is made.
+            </p>
+        </main>
+    </body>
+</html>
