@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>How was your visit?</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <div aria-hidden="true" class="smile">☺</div>
+                <h1>How Qas Your Visit?</h1>
+                <p>A little feedback goes a long way.</p>
+            </header>
+
+            <form id="form">
+                <fieldset>
+                    <legend>Choose a rating</legend>
+                    <div class="stars">
+                        <label>
+                            <input name="rating" required="" type="radio" value="1" />
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">1 star</span>
+                        </label>
+                        <label>
+                            <input name="rating" type="radio" value="2" />
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">2 stars</span>
+                        </label>
+                        <label>
+                            <input name="rating" type="radio" value="3" />
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">3 stars</span>
+                        </label>
+                        <label>
+                            <input name="rating" type="radio" value="4" />
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">4 stars</span>
+                        </label>
+                        <label>
+                            <input name="rating" type="radio" value="5" />
+                            <span aria-hidden="true">★</span>
+                            <span class="sr-only">5 stars</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <p id="label">No rating selected</p>
+                <button>Submit rating</button>
+            </form>
+            <p class="status" id="status" role="status">
+                Practice form: your rating stays on this page.
+            </p>
+        </main>
+    </body>
+</html>
