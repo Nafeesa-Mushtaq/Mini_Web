@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Corner café</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <p class="muted">FRESH &amp; SIMPLE</p>
+                <h1>Corner Café</h1>
+                <p>A little something for your break.</p>
+            </header>
+            <div aria-label="Menu categories" class="filters" role="group">
+                <button aria-pressed="true" data-filter="all">All</button>
+                <button aria-pressed="false" data-filter="breakfast">Breakfast</button>
+                <button aria-pressed="false" data-filter="lunch">Lunch</button>
+                <button aria-pressed="false" data-filter="drinks">Drinks</button>
+            </div>
+            <div class="menu">
+                <article data-category="breakfast">
+                    <span aria-hidden="true">🥞</span>
+                    <h2>Berry pancakes</h2>
+                    <p>Fluffy pancakes with seasonal berries.</p>
+                    <strong>$6.50</strong>
+                </article>
+                <article data-category="breakfast">
+                    <span aria-hidden="true">🥐</span>
+                    <h2>Butter croissant</h2>
+                    <p>Golden, flaky, and baked this morning.</p>
+                    <strong>$3.00</strong>
+                </article>
+                <article data-category="lunch">
+                    <span aria-hidden="true">🥪</span>
+                    <h2>Garden sandwich</h2>
+                    <p>Crunchy greens and hummus on sourdough.</p>
+                    <strong>$7.00</strong>
+                </article>
+                <article data-category="lunch">
+                    <span aria-hidden="true">🥣</span>
+                    <h2>Soup of the day</h2>
+                    <p>A warm bowl with a slice of bread.</p>
+                    <strong>$5.50</strong>
+                </article>
+                <article data-category="drinks">
+                    <span aria-hidden="true">☕</span>
+                    <h2>Flat white</h2>
+                    <p>Espresso with silky steamed milk.</p>
+                    <strong>$3.50</strong>
+                </article>
+                <article data-category="drinks">
+                    <span aria-hidden="true">🍋</span>
+                    <h2>Lemon cooler</h2>
+                    <p>Fresh lemon, soda, and plenty of ice.</p>
+                    <strong>$3.00</strong>
+                </article>
+            </div>
+            <p class="muted" id="count" role="status">6 items on the menu</p>
+        </main>
+    </body>
+</html>
