@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Image preview</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer="" src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="project-heading">
+                <h1>Image Preview</h1>
+                <p>Choose a picture from your device. It stays on this page.</p>
+            </header>
+            <div class="split">
+                <div class="controls-panel">
+                    <label for="file">Choose an image</label>
+                    <input
+                        accept="image/png,image/jpeg,image/webp,image/gif"
+                        id="file"
+                        type="file"
+                    />
+                    <p class="muted">PNG, JPEG, WebP, or GIF · up to 5 MB</p>
+                    <button class="secondary" disabled="" id="clear">Remove image</button>
+                </div>
+                <div class="preview-panel">
+                    <div id="preview">
+                        <p id="empty">Your image will appear here.</p>
+                        <img alt="Your selected image" hidden="" id="image" />
+                    </div>
+                    <p class="status" id="info" role="status"></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
